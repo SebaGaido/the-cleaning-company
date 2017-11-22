@@ -5,9 +5,35 @@ body {
 	margin: 0 auto;
 }
 
-/* text styles
+/* main styles
 ------------------------------------------------------- */
 
+p {
+	
+}
+
+h1 {
+	
+}
+
+h2 {
+	
+}
+
+h3 {
+	
+}
+
+img {
+	
+}
+
+img.header {
+	width: 30%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
 
 /* interaction styles
 ------------------------------------------------------- */
@@ -17,31 +43,44 @@ body {
 ------------------------------------------------------- */
 
 
-/* grid desktop
+/* grid
 ------------------------------------------------------- */
 
 .container {
-	
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
 }
 
 .row {
-	
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
 }
 
 .col-md-8 {
 	width: 66%;
+	display: block;
+	position: relative;
 }
 
 .col-sm-8 {
 	width: 66%;
+	display: block;
+	position: relative;
 }
 
 .col-lg-6 {
 	width: 50%;
+	display: block;
+	position: relative;
 }
 
 .col-md-6 {
+	padding: 20px 20px 20px 20px;
 	width: 50%;
+	display: inline-block;
+	position: relative;
 }
 
 .col-sm-6 {
@@ -50,6 +89,8 @@ body {
 
 .col-xs-6 {
 	width: 100%;
+	display: block;
+	position: relative;
 }
 
 .col-md-4 {
