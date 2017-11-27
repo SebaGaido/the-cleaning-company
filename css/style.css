@@ -196,6 +196,21 @@ fieldset {
 /* menu
 ------------------------------------------------------- */
 
+.nav {
+	top: 40px;
+	left: 40px;
+	display: block;
+	position: fixed;
+	z-index: 999;
+}
+
+.nav-menu {
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 
 /* grid
 ------------------------------------------------------- */
