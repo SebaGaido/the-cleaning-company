@@ -49,6 +49,12 @@ h3.review {
 	font-weight: 300;
 }
 
+h3.faqs {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8vw;
+	font-weight: 300;
+}
+
 ul {
 	list-style-type: none;
 	text-align: right;
@@ -87,6 +93,10 @@ svg {
 
 .text-box {
 	padding: 200px 80px 200px 80px;
+}
+
+.faqs-box {
+	padding: 100px 80px 100px 80px;
 }
 
 .text-contact {
@@ -196,6 +206,20 @@ fieldset {
   padding-left: 12px;
 }
 
+button {
+	text-decoration: none;
+}
+
+button.active {
+	color: #0066ff;
+	text-decoration: none;
+}
+
+button:hover {
+	color: #0066ff;
+	transition: 0.3s;
+}
+
 /* submit button */
 .submit {
 	border: none;
@@ -204,6 +228,29 @@ fieldset {
 	font-size: 1.2em;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
+}
+
+/* FAQs tab content*/
+
+.tabcontent {
+	font-size: 1em;
+	font-weight: 300;
+	color: #000;
+	display: block;
+	text-align: left;
+	line-height: 1.6em;
+	position: relative;
+}
+
+.faqstab {
+	background-color: transparent;
+	color: #000;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	border: none;
+	text-align: left;
+	margin-top: 20px;
 }
 
 
