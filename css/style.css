@@ -50,16 +50,11 @@ h3.review {
 }
 
 ul {
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	font-size: 0.9em;
-	line-height: 1.8em;
-	font-weight: 300;
 	list-style-type: none;
+	text-align: right;
 }
 
 ul li {
-	font-weight: 300;
 	list-style-type: none;
 }
 
@@ -80,13 +75,27 @@ img.section {
 	z-index: -999;
 }
 
+img.contact {
+	width: 300px;
+	opacity: 0.5;
+	margin-top: 60px;
+}
+
+svg {
+	overflow: visible;
+}
+
 .text-box {
 	padding: 200px 80px 200px 80px;
 }
 
 .text-contact {
-	padding: 60px 120px 0px 0px;
-	width: 0;
+	margin-top: 40px;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4vw;
+	line-height: 1.8em;
+	font-weight: 300;
 }
 
 .text-white {
@@ -115,6 +124,10 @@ img.section {
 
 .float-right {
 	float: right;
+}
+
+.margin {
+	margin: 60px 60px 60px 60px;
 }
 
 .less-line-height {
@@ -183,6 +196,7 @@ fieldset {
   padding-left: 12px;
 }
 
+/* submit button */
 .submit {
 	border: none;
 	margin-top: 40px;
@@ -196,19 +210,60 @@ fieldset {
 /* menu
 ------------------------------------------------------- */
 
-.nav {
-	top: 40px;
-	left: 40px;
-	display: block;
+.menu {
+	margin-top: 40px;
+	margin-left: 40px;
 	position: fixed;
 	z-index: 999;
 }
 
-.nav-menu {
-	background-color: #fff;
+.menu-txt {  
+	margin-right: 20px;
+	margin-bottom: 40px;
 	display: block;
-	width: 100%;
-	height: 100%;
+	float: right;
+	text-align: right;
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    text-align:left;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+	opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #3cf7b9;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 
@@ -274,7 +329,7 @@ fieldset {
 
 .col-md-3 {
 	width: 25%;
-	height: 678px;
+	height: 578px;
 }
 
 .col-sm-3 {
