@@ -3,6 +3,7 @@
 
 body {
 	margin: 0 auto;
+	overflow-x: hidden; 
 }
 
 /* main styles
@@ -35,7 +36,11 @@ h1.review {
 
 h2 {
 	font-family: 'Lato', sans-serif;
-	font-size: 2vw;
+	font-size: 1.6em;
+}
+
+h2.text-primary {
+	font-weight: 300;
 }
 
 h3 {
@@ -76,9 +81,11 @@ img.header {
 }
 
 img.section {
-	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
 	position: relative;
 	z-index: -999;
+	min-height: 680px;
 }
 
 img.contact {
@@ -220,6 +227,30 @@ button:hover {
 	transition: 0.3s;
 }
 
+/* review button */
+
+.rvw-left {
+	position: absolute;
+	top: 50%;
+	left: -20%;
+	transform: translate(0%,-50%);
+	background-color: transparent;
+	color: #000;
+	font-size: 1.8em;
+	border: none;
+}
+
+.rvw-right {
+	position: absolute;
+	top: 50%;
+	right: -20%;
+	transform: translate(0%,-50%);
+	background-color: transparent;
+	color: #000;
+	font-size: 1.8em;
+	border: none;
+}
+
 /* submit button */
 .submit {
 	border: none;
@@ -357,7 +388,9 @@ button:hover {
 }
 
 .col-sm-6 {
-	width: 50%;
+	width: 20%;
+	display: inline-block;
+	position: relative;
 }
 
 .col-xs-6 {
@@ -433,6 +466,10 @@ button:hover {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
+	.col-md-6 {
+		width: 100%;
+		position: relative;
+	}
 	
 }
 
@@ -442,11 +479,15 @@ button:hover {
 	float: left;
 	width: 100%;
 }
+	.col-md-6 {
+		width: 100%;
+		display: inline-block;
+		position: absolute;
+	}
 }
 
 /* Tablet landscape */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-	
 }
 
 /* Bigger screens */

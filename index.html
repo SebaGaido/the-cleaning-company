@@ -62,9 +62,7 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div>
 					<img class="section" src="images/office-inside.png" alt="Office cleaning">
-				</div>
 			</div>
 		</div>
 	</div>
@@ -108,18 +106,25 @@
 		<div class="row bg-green">
 			<div class="col-md-3">
 				<div class="text-box left">
-					<p class="review">-</p>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="text-box center">
-					<p class="review text-black">"consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit."</p>
-					<p class="review text-white">-Cliente</p>
-				</div>
+			<div class="col-md-8">
+					<div class="text-box center rvw">
+						<p class="review text-black">"consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit."</p>
+						<p class="review text-white">-Cliente</p>
+					</div>
+					<div class="text-box center rvw">
+						<p class="review text-black">"agd."</p>
+						<p class="review text-white">-Cliente</p>
+					</div>
+  					<!--<img class="rvw" src="images/contact-img.png" style="width:100%">
+  					<img class="rvw" src="images/logo.png" style="width:100%">
+ 					<img class="rvw" src="images/office-inside.png" style="width:100%">-->
+					<button class="rvw-right" onclick="plusDivs(1)">&#10095;</button>
+					<button class="rvw-left" onclick="plusDivs(-1)">&#10094;</button>
 			</div>
 			<div class="col-md-3">
 				<div class="text-box right">
-					<p class="review">-</p>
 				</div>
 			</div>
 		</div>
@@ -132,7 +137,7 @@
 					<h3 class="faqs text-black">Pregunte lo que necesite saber. Estamos para responderle.</h3>
 				</div>
 		<div class="row">
-			<div class="col-md-4 faqs-box">
+			<div class="col-md-4 col-sm-4 faqs-box">
 				<button class="faqstab" id="defaultOpen" onClick="openfaq(event,'faq1')">¿C&oacute;mo trabaja The Cleaning Company?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq2')">¿En qu&eacute; tipos de establecimientos trabajan?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq3')">¿Debe haber alguien presente?</button>
@@ -141,7 +146,7 @@
 				<button class="faqstab" onclick="openfaq(event,'faq6')">¿C&oacute;mo es la forma de pago?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq7')">Me interesa ¿C&oacute;mo reservo?</button>
 			</div>
-			<div class="col-md-8 faqs-box">
+			<div class="col-md-8 col-sm-8 faqs-box">
 				<div id="faq1" class="tabcontent"><p>consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p></div>
 				<div id="faq2" class="tabcontent"><p>Hay controversia sobre su fiabilidad y precisión.19 La revista científica Nature declaró en diciembre de 2005 que la Wikipedia en inglés era casi tan exacta en artículos científicos como la Encyclopaedia Britannica.20 El estudio se realizó comparando 42 artículos de a</p></div>
 				<div id="faq3" class="tabcontent"><p>grupo de alumnos del máster de Periodismo del Instituto de Estudios Políticos de París para analizar la fiabilidad del proyecto, se materializó en el libro La revolución Wikipedia (Alianza Editorial) cuyas conclusiones eran bastante críti</p></div>
@@ -191,7 +196,7 @@
 									<span>¿Cuándo?</span>
 								</div>
 								<div class="field-date">
-									<input type="date" name="date">
+									<input type="date" id="fecha" name="date">
 								</div>
 							</div>
 						</fieldset>
