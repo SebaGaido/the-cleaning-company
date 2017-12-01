@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css" />
+<style>
+button.accordion {
+    background-color: #FFFFFF;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #0066ff;
+	transition: 0.3s;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+	
+<!-- FAQs -->
+	<div class="container">
+		<div class="center less-line-height">
+					<br><br><br><br>
+					<h3 class="faqs text-black">Pregunte lo que necesite saber. Estamos para responderle.</h3>
+				</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 faqs-box">
+				<button class="accordion faqstab">¿C&oacute;mo trabaja The Cleaning Company?</button>
+				<div class="tabcontent"><p>consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p></div>
+				<button class="accordion faqstab">¿En qu&eacute; tipos de establecimientos trabajan?</button>
+				<div class="panel"><p>Hay controversia sobre su fiabilidad y precisión.19 La revista científica Nature declaró en diciembre de 2005 que la Wikipedia en inglés era casi tan exacta en artículos científicos como la Encyclopaedia Britannica.20 El estudio se realizó comparando 42 artículos de a</p></div>
+				<button class="accordion faqstab">¿Debe haber alguien presente?</button>
+				<div class="panel"><p>grupo de alumnos del máster de Periodismo del Instituto de Estudios Políticos de París para analizar la fiabilidad del proyecto, se materializó en el libro La revolución Wikipedia (Alianza Editorial) cuyas conclusiones eran bastante críti</p></div>
+				<button class="accordion faqstab">¿Debo proveer los insumos de limpieza?</button>
+				<div class="panel"><p>en DVD-ROM, y se tiene la intención de hacer una versión inglesa en DVD con más de 2000 artículos.23 Muchas de sus ediciones han sido replicadas a través de Internet —mediante «espejos»— y han dado origen a enciclopedias deriv</p></div>
+				<button class="accordion faqstab">¿Qu&eacute; seguridad y garant&iacute;a tengo?</button>
+				<div class="panel"><p>a Wikipedia en español, creada meses después, heredó el nombre. Tras una votación realizada entre septiembre y noviembre de 2003 por parte de los usuarios de esta, se decidió seguir con el mismo término. En la votación se barajaron los siguientes nombres —</p></div>
+				<button class="accordion faqstab">¿C&oacute;mo es la forma de pago?</button>
+				<div class="panel"><p>Según su cofundador, Jimmy Wales, el proyecto constituye «un esfuerzo para crear y distribuir una enciclopedia libre, de la más alta calidad posible, a cada persona del planeta, en su idioma</p></div>
+				<button class="accordion faqstab">Me interesa ¿C&oacute;mo reservo?</button>
+				<div class="panel"><p>Han existido y existen muchas enciclopedias en línea que compitieron con Wikipedia, como Microsoft Encarta y Encyclopædia Britannica; sin embargo, ninguna ha logrado el mismo éxito que Wikipedia.31ese </p></div>
+			</div>
+			<div class="col-md-8 col-sm-8 faqs-box">
+			</div>
+		</div>
+	</div>	
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+</html>

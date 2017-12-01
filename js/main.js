@@ -53,19 +53,21 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block"; 
 }
 
-// seleccionar fecha a partir del dia actual
 
-$(function(){
-            var dtToday = new Date();
-    
-            var month = dtToday.getMonth() + 1;
-            var day = dtToday.getDate();
-            var year = dtToday.getFullYear();
-            if(month < 10)
-                month = '0' + month.toString();
-            if(day < 10)
-                day = '0' + day.toString();
-    
-            var maxDate = year + '-' + month + '-' + day;
-            $('#fecha').attr('min', maxDate);
-        });
+
+// FAQs responsive tabs
+
+var acc = document.getElementsByClassName("accordion");
+var j;
+
+for (j = 0; j < acc.length; j++) {
+  acc[j].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
