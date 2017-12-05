@@ -22,11 +22,11 @@
                 preserveAspectRatio="xMidYMid meet">-->
 	
 	<!-- Menu -->
-	<img class="menu" onclick="openNav()" width="80px" src="images/menu.svg" alt="Menu">
+	<img class="menu" onclick="openNav()" src="images/menu.svg" alt="Menu">
 	
 	<div id="mySidenav" class="sidenav">
  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<img src="images/logo.svg" width="200px;" style="margin-left: 20px; margin-bottom: 40px;" alt="Menu">
+		<img class="menu-in" src="images/logo.svg" alt="Menu">
     	<a href="#">Inicio</a>
     	<a href="#">Acerca</a>
     	<a href="#">Servicios</a>
@@ -47,7 +47,7 @@
 			<img class="header" src="images/logo.svg" alt="The Cleaning Company">
 		</div>
 		<div>
-			<h2 class="text-primary center">Servicio de limpieza profesional</h2>
+			<h2 class="header text-primary center margin">Limpieza profunda</h2>
 			<h2 class="text-primary center">&#8595;</h2>
 		</div>
 	</div>
@@ -57,7 +57,7 @@
 		<div class="row">
 			<div class="col-md-6 bg-blue">
 				<div class="text-box">
-					<h2 class="text-white right">Lorem ipsum dolor sit amet</h2><br>
+					<h2 class="text-white right">AA Lorem ipsum dolor sit amet</h2><br>
 					<p class="section text-white right">consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 			</div>
 			<div class="col-md-6 bg-light-blue">
 				<div class="text-box">
-					<h2 class="text-white left">Lorem ipsum dolor sit amet</h2><br>
+					<h2 class="text-white left">B Lorem ipsum dolor sit amet</h2><br>
 					<p class="section text-white left">consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p>
 				</div>
 			</div>
@@ -105,17 +105,17 @@
 	<div class="container">
 		<div class="row bg-green">
 			<div class="col-md-3">
-				<div class="text-box left">
+				<div class="left">
 				</div>
 			</div>
 			<div class="col-md-8">
-					<div class="text-box center rvw">
+					<div class="center rvw">
 						<p class="review text-black">"consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit."</p>
-						<p class="review text-white">-Cliente</p>
+						<p class="text-white customer">-Cliente</p>
 					</div>
-					<div class="text-box center rvw">
+					<div class="center rvw">
 						<p class="review text-black">"agd."</p>
-						<p class="review text-white">-Cliente</p>
+						<p class="text-white customer">-Cliente</p>
 					</div>
   					<!--<img class="rvw" src="images/contact-img.png" style="width:100%">
   					<img class="rvw" src="images/logo.png" style="width:100%">
@@ -124,7 +124,7 @@
 					<button class="rvw-left" onclick="plusDivs(-1)">&#10094;</button>
 			</div>
 			<div class="col-md-3">
-				<div class="text-box right">
+				<div class="right">
 				</div>
 			</div>
 		</div>
@@ -146,7 +146,7 @@
 				<button class="faqstab" onclick="openfaq(event,'faq6')">¿C&oacute;mo es la forma de pago?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq7')">Me interesa ¿C&oacute;mo reservo?</button>
 			</div>
-			<div class="col-md-8 col-sm-8 faqs-box">
+			<div class="col-md-4 faqs-box">
 				<div id="faq1" class="tabcontent"><p>consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p></div>
 				<div id="faq2" class="tabcontent"><p>Hay controversia sobre su fiabilidad y precisión.19 La revista científica Nature declaró en diciembre de 2005 que la Wikipedia en inglés era casi tan exacta en artículos científicos como la Encyclopaedia Britannica.20 El estudio se realizó comparando 42 artículos de a</p></div>
 				<div id="faq3" class="tabcontent"><p>grupo de alumnos del máster de Periodismo del Instituto de Estudios Políticos de París para analizar la fiabilidad del proyecto, se materializó en el libro La revolución Wikipedia (Alianza Editorial) cuyas conclusiones eran bastante críti</p></div>
@@ -181,8 +181,6 @@
 				<button class="accordion faqstab">Me interesa ¿C&oacute;mo reservo?</button>
 				<div class="panel"><p>Han existido y existen muchas enciclopedias en línea que compitieron con Wikipedia, como Microsoft Encarta y Encyclopædia Britannica; sin embargo, ninguna ha logrado el mismo éxito que Wikipedia.31ese </p></div>
 			</div>
-			<div class="col-md-8 col-sm-8 faqs-box">
-			</div>
 		</div>
 	</div>	
 	
@@ -191,29 +189,30 @@
 		<div class="row bg-light-blue">
 			<div class="col-md-3">
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 col-sm-8">
 				<div class="center less-line-height">
-					<h1 class="review text-white">¿Listo para un espacio m&aacute;s limpio?</h1>
-					<h3 class="review text-white">D&eacute;jenos sus datos y lo contactaremos</h3>
+					<h1 class="form text-white">¿Listo para un espacio m&aacute;s limpio?</h1>
+					<h3 class="form text-white">D&eacute;jenos sus datos y lo contactaremos</h3>
 				</div>
+				<div><br><br></div>
 				<div class="center">
 					<form action="" method="post">
 						<fieldset>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Nombre">
+								<input type="text" name="nombre" placeholder="Nombre *">
 							</div>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Email">
+								<input type="text" name="nombre" placeholder="Email *">
 							</div>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Ciudad">
+								<input type="text" name="nombre" placeholder="Ciudad *">
 							</div>
 							<div class="field">
 								<input type="text" name="nombre" placeholder="Teléfono">
 							</div>
 							<div class="field">
 								<select name="">
-  									<option value="volvo">¿Qué servicio necesita?</option>
+  									<option value="volvo">¿Qué servicio necesita? *</option>
   									<option value="saab">B&aacute;sico</option>
   									<option value="opel">Cl&aacute;sico</option>
  									<option value="audi">Premium</option>
@@ -229,8 +228,8 @@
 							</div>
 						</fieldset>
 						<div></div>
-						<div class="col-md-6">
-								<input class="submit" type="submit" name="Enviar" value="Enviar">
+						<div class="col-xs-6">
+							<button class="submit" type="submit" name="Enviar" value="Enviar">Enviar &#8594;</button>
 						</div>
 					</form>
 				</div>
@@ -243,15 +242,11 @@
 	<!-- contacto -->
 	<div class="container">
 		<div class="row bg-black">
-			<div class="col-md-3 margin">
-					<img src="images/logo-bw.svg" alt="The Cleaning Company">
+			<div class="col-md-6 col-sm-6">
+				<img class="contact" src="images/logo-bw.svg" alt="The Cleaning Company">
 			</div>
-			<div class="col-md-3 margin">
-				<div class="text-box left">
-				</div>
-			</div>
-			<div class="col-md-3 margin">
-				<div class="text-contact text-white">
+			<div class="col-md-6 col-sm-6">
+				<div class="col-sm-3 text-white">
 					<ul>
 						<li style="font-weight: bold;">Contacto</li>
 						<li><br></li>
@@ -260,13 +255,11 @@
 						<li>2244-3366</li>
 						<li>Mapa</li>
 					</ul>
+					<!--<img class="bottom" src="images/contact-img.png" alt="The Cleaning Company">-->
 				</div>
-				<div class="text-contact text-white">
-					<img class="contact" src="images/contact-img.png" alt="The Cleaning Company">
+				<div class="col-sm-3 text-white">
 				</div>
-			</div>
-			<div class="col-md-3 margin">
-				<div class="text-contact text-white">
+				<div class="col-sm-3 text-white">
 					<ul>
 						<li style="font-weight: bold;">Servicios</li>
 						<li><br></li>
@@ -275,8 +268,6 @@
 						<li>Organizaci&oacute;n</li>
 						<li>Otros</li>
 					</ul>
-				</div>
-				<div class="text-contact text-white">
 					<ul>
 						<li><br></li>
 						<li>Inicio</li>

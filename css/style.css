@@ -33,6 +33,11 @@ h1.review {
 	font-size: 3vw;
 	font-weight: 400;
 }
+h1.form {
+	margin: 160px 0px 10px 0px;
+	font-size: 3vw;
+	font-weight: 400;
+}
 
 h2 {
 	font-family: 'Lato', sans-serif;
@@ -53,6 +58,11 @@ h3.review {
 	font-size: 2vw;
 	font-weight: 300;
 }
+h3.form {
+	font-family: 'Lato', sans-serif;
+	font-size: 2vw;
+	font-weight: 300;
+}
 
 h3.faqs {
 	font-family: 'Lato', sans-serif;
@@ -67,6 +77,10 @@ ul {
 
 ul li {
 	list-style-type: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 1.3em;
+	line-height: 1.4em;
 }
 
 img {
@@ -85,15 +99,21 @@ img.section {
 	min-height: 100%;
 	position: relative;
 	z-index: -999;
-	min-height: 680px;
 }
 
 img.contact {
-	width: 300px;
-	opacity: 0.5;
+	width: 200px;
 	margin-top: 60px;
+	margin-left: 60px;
 }
-
+img.bottom {
+	bottom: 0;
+	width: 240px;
+	display: block;
+	position: relative;
+	opacity: 0.4;
+	margin-left: 40px;
+}
 svg {
 	overflow: visible;
 }
@@ -106,11 +126,15 @@ svg {
 	padding: 100px 80px 100px 80px;
 }
 
+.customer {
+		font-size: 1.6em;
+}
+
 .text-contact {
 	margin-top: 40px;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
-	font-size: 1.4vw;
+	font-size: 1.2em;
 	line-height: 1.8em;
 	font-weight: 300;
 }
@@ -177,6 +201,7 @@ svg {
 ------------------------------------------------------- */
 
 input {
+	color: #7fcfff;
 	background-color: transparent;
 	border-top: none;
 	border-left: none;
@@ -193,21 +218,21 @@ fieldset {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Lato', sans-serif;
-  color: #cccccc;
+  color: #fff;
   font-size: 1.4em;
   font-weight: 100;
   padding-left: 12px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Lato', sans-serif;
-  color: #cccccc;
+  color: #fff;
   font-size: 1.4em;
   font-weight: 100;
   padding-left: 12px;
 }
 :-ms-input-placeholder { /* IE 10+ */
   font-family: 'Lato', sans-serif;
-  color: #cccccc;
+  color: #fff;
   font-size: 1.4em;
   font-weight: 100;
   padding-left: 12px;
@@ -227,8 +252,10 @@ button:hover {
 	transition: 0.3s;
 }
 
-/* review button */
-
+/* review */
+.rvw {
+		padding: 200px 10px 80px 10px;
+	}
 .rvw-left {
 	position: absolute;
 	top: 50%;
@@ -253,12 +280,17 @@ button:hover {
 
 /* submit button */
 .submit {
+	background-color: transparent;
 	border: none;
 	margin-top: 40px;
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
+}
+
+.submit:hover {
+	color: #33ffcc;
 }
 
 /* FAQs tab content*/
@@ -334,9 +366,10 @@ div.panel {
 
 .menu {
 	margin-top: 40px;
-	margin-left: 40px;
+	right: 40px;
 	position: fixed;
 	z-index: 999;
+	width: 60px;
 }
 
 .menu-txt {  
@@ -347,6 +380,12 @@ div.panel {
 	text-align: right;
 	font-weight: 300;
 	line-height: 1.6em;
+}
+
+img.menu-in {
+	width: 200px;
+	margin-left: 20px;
+	margin-bottom: 40px;
 }
 
 .sidenav {
@@ -383,7 +422,7 @@ div.panel {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 10px;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -432,7 +471,7 @@ div.panel {
 }
 
 .col-sm-6 {
-	width: 20%;
+	width: 50%;
 	display: inline-block;
 	position: relative;
 }
@@ -441,6 +480,7 @@ div.panel {
 	width: 100%;
 	display: block;
 	position: relative;
+	margin-top: 20px;
 }
 
 .col-md-4 {
@@ -457,7 +497,10 @@ div.panel {
 }
 
 .col-sm-3 {
-	width: 25%;
+	/*width: 25%;*/
+	display: inline-block;
+	margin-top: 100px;
+	margin-left: 40px;
 }
 
 .col-xs-3 {
@@ -478,7 +521,7 @@ div.panel {
 .field select {
    background: transparent;
    font-family: 'Lato', sans-serif;
-   color: #cccccc;
+   color: #7fcfff;
    font-weight: 100;
    width: 92%;
    padding-left: 14px;
@@ -496,13 +539,17 @@ div.panel {
    border-bottom: 1px solid #fff;
 }
 
+
+
 .date-txt {
    font-family: 'Lato', sans-serif;
-   color: #cccccc;
+   color: #fff;
    font-size: 1em;
    font-weight: 100;
    margin-top: 26px;
    padding-left: 2px;
+   margin-left: -14px;
+   opacity: 0.6;
 }
 
 /* Responsive styles 
@@ -510,8 +557,249 @@ div.panel {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
+	p {
+		font-size: 0.8em;
+		font-weight: 100;
+		line-height: 1.6em;
+	}
+	p.section {
+		font-size: 0.8em;
+	}
+	p.review {
+    	font-size: 1em;
+    	line-height: 1.8em;
+	}
+	h1.form {
+    	margin: 60px 0px 10px 0px;
+    	font-size: 1.2em;
+    	font-weight: 400;
+		line-height: 1.4em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h2.header {
+		font-size: 1em;
+	}
+	h3.faqs {
+    	font-size: 1em;
+		line-height: 1.6em;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	h3.form {
+		font-size: 0.8em;
+	}
+	
+	/* menu */
+	.sidenav a {
+		font-size: 1.4em;
+	}
+	img.menu-in {
+		width: 40%;
+	}
+	
+	
+	img.header {
+		width: 200px;
+		margin-top: 60px;
+	}
+	.less-line-height {
+    	line-height: 1em;
+	}
+	.menu {
+		margin-top: 20px;
+		right: 20px;
+		position: fixed;
+		z-index: 999;
+		width: 30px;
+	}
+	.margin {
+		margin: 30px 60px 30px 60px;
+	}
+	.text-box {
+    	padding: 80px 40px 40px 40px;
+	}
+	.col-sm-8 {
+		width: 140%;
+	}
 	.col-md-6 {
+		position: absolute;
+		display: inline-block;
 		width: 100%;
+		height: 400px;
+	}
+	.col-sm-6 {
+		position: relative;
+		height: 678px;
+	}
+	.col-sm-4 {
+		width: 100%;
+	}
+	.col-sm-3 {
+		width: 15%;
+		margin-top: 40px;
+	}
+	.rvw {
+    	padding: 270px 10px 80px 10px;
+	}
+	.rvw-left {
+		font-size: 1.4em;
+	}
+	.rvw-right {
+		font-size: 1.4em;
+	}
+	.customer {
+    	font-size: 1em;
+	}
+	.faqs-big-size {
+		display: none;
+	}
+	.faqs-small-size {
+		display: block;
+	}
+	.faqs-box {
+    	padding: 20px 20px 20px 20px;
+	}
+	button.accordion {
+		padding: 6px;
+		font-size: 0.8em;
+	}
+	div.panel {
+    	padding: 0 7px;
+	}
+	fieldset {
+		margin-top: -20px;
+	}
+	.field {
+    	float: left;
+    	width: 100%;
+	}
+	.submit {
+		margin-top: 10px;
+		font-size: 0.9em;
+	}
+	img.contact {
+    	width: 120px;
+		margin-top: 40px;
+		margin-left: 40px;
+	}
+	ul li {
+    	font-weight: 100;
+    	font-size: 0.9em;
+    	line-height: 1.4em;
+	}
+}
+
+/* Tablet vertical */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.menu {
+		width: 40px;
+		margin-top: 20px;
+		right: 20px;
+	}
+	p.section {
+		font-size: 0.9em;
+		line-height: 2em;
+	}
+	p.review {
+    	font-size: 1.2em;
+    	line-height: 1.6em;
+    	padding-top: 140px;
+	}
+	h1.review {
+    	margin: 80px 0px 10px 0px;
+    	font-size: 1.4em;
+    	font-weight: 400;
+    	line-height: 1.6em;
+	}
+	h1.form {
+    	margin: 80px 0px 10px 0px;
+    	font-size: 1.4em;
+    	font-weight: 400;
+    	line-height: 1.6em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h3.faqs {
+    	font-family: 'Lato', sans-serif;
+    	font-size: 1.4em;
+    	font-weight: 300;
+		padding-top: 60px;
+    	padding-left: 60px;
+    	padding-right: 60px;
+    	line-height: 1.6em;
+	}
+	h3.review {
+    	font-family: 'Lato', sans-serif;
+    	font-size: 1em;
+   		font-weight: 300;
+	}
+	h3.form {
+    	font-family: 'Lato', sans-serif;
+    	font-size: 1em;
+   		font-weight: 300;
+	}
+	ul li {
+    	font-weight: 100;
+    	font-size: 1em;
+    	line-height: 1.4em;
+	}
+	img.contact {
+    	width: 200px;
+    	margin-top: 20px;
+    	margin-left: 30px;
+	}
+	img.bottom {
+		display: none;
+	}
+	img.section {
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -999;
+	}
+	.text-box {
+		padding: 80px 80px 80px 80px;
+	}
+	.faqs-box {
+		padding: 50px 20px 100px 20px;
+	}
+	.field {
+		float: left;
+		width: 100%;
+	}
+	.col-md-6 {
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		height: 400px;
+	}
+	.col-sm-6 {
+		position: relative;
+		height: 678px;
+	}
+	.col-xs-6 {
+		position: relative;
+		display: inline-block;
+	}
+	.col-md-4 {
+		width: 100%;
+	}
+	.col-sm-4 {
+		width: 100%;
+	}
+	.col-md-3 {
+	}
+	.col-sm-3 {
+		position: relative;
+		display: block;
+		margin-right: 40px;
+	}
+	.col-xs-3 {
+		display: inline-block;
 		position: relative;
 	}
 	.faqs-big-size {
@@ -519,26 +807,32 @@ div.panel {
 	}
 	.faqs-small-size {
 		display: block;
+		height: 940px;
 	}
-	
-}
-
-/* Tablet vertical */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-	.field {
-	float: left;
-	width: 100%;
-}
-	.col-md-6 {
-		width: 100%;
-		display: inline-block;
-		position: absolute;
+	.form-sm {
+		height: 940px;
 	}
-	.faqs-big-size {
-		display: none;
+	.rvw {
+		padding: 120px 10px 80px 10px;
 	}
-	.faqs-small-size {
-		display: block;
+	.customer {
+		font-size: 1.2em;
+	}
+	.less-line-height {
+    	line-height: 0.4em;
+	}
+	.date-txt {
+		margin-left: -22px;
+	}
+	.field-date {
+		width: 50%;
+	}
+	.field select {
+		width: 92%;
+		margin-top: 14px;
+	}
+	.submit {
+		margin-top: 30px;
 	}
 }
 
