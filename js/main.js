@@ -71,3 +71,87 @@ for (j = 0; j < acc.length; j++) {
     } 
   }
 }
+
+
+
+
+
+// form validation
+
+function reservation() {
+	var nombre = document.getElementById('nombre');
+	
+	if (nombre.value == "") {
+		alert("Ingrese su nombre");
+		nombre.style.borderBottom = "yellow solid 2px";
+		nombre.style.color = "yellow";
+		return false;
+	}
+	
+	var email = document.getElementById('email');
+	
+	if (email.value == "") {
+		alert("ingrese su email");
+		email.style.borderBottom = "yellow solid 2px";
+		email.style.color = "yellow";
+		return false;
+	}
+	
+	var ciudad = document.getElementById('ciudad');
+	
+	if (ciudad.value == "") {
+		alert("Ingrese su ciudad");
+		ciudad.style.borderBottom = "yellow solid 2px";
+		ciudad.style.color = "yellow";
+		return false;
+	}
+	
+	var servicio = document.getElementById("servicio");
+	
+	if (servicio.value == "choose") {
+		alert("Seleccione un tipo de servicio");
+		servicio.style.borderBottom = "yellow solid 2px";
+		servicio.style.color = "yellow";
+		return false;
+	}
+	
+	var fecha = document.getElementById("fecha");
+	
+	if (fecha.value == "") {
+		alert("Seleccione una fecha");
+		fecha.style.borderBottom = "yellow solid 2px";
+		fecha.style.color = "yellow";
+		return false;
+	}
+	
+	return true;
+		h1.style.color = "yellow";
+}
+
+
+
+
+/*$(function()
+ { $("#reservation").validate(
+      {
+        rules:
+        {
+          nombre:
+          {
+            required: true
+          },
+          email:
+          {
+            required: true,
+            email: true
+          }
+        },
+        messages: {nombre:{required: "Ingrese su nombre"},
+          email:
+          {
+            required: "Please enter your email address."
+          }
+        }
+      });
+ }
+);*/

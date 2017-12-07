@@ -211,6 +211,7 @@ input {
 	padding: 20px;
 }
 
+
 fieldset {
 	border: none;
 	text-decoration: none;
@@ -510,6 +511,7 @@ img.menu-in {
 .field {
 	float: left;
 	width: 50%;
+	height: 60px;
 }
 
 .field-date {

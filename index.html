@@ -12,6 +12,11 @@
 	<!-- Main styles -->
 	<link rel="stylesheet" href="css/style.css" />
 	
+	<!-- jQuery -->
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js" type="text/javascript"></script>-->
+
+	
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
@@ -196,26 +201,26 @@
 				</div>
 				<div><br><br></div>
 				<div class="center">
-					<form action="" method="post">
+					<form onsubmit="return reservation();" id="reservation" action="" method="post" accept-charset="UTF-8">
 						<fieldset>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Nombre *">
+								<input id="nombre" type="text" name="nombre" placeholder="Nombre *" value="">
 							</div>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Email *">
+								<input id="email" type="text" name="nombre" placeholder="Email *" value="" >
 							</div>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Ciudad *">
+								<input id="ciudad" type="text" name="nombre" placeholder="Ciudad *" value="">
 							</div>
 							<div class="field">
-								<input type="text" name="nombre" placeholder="Teléfono">
+								<input id="telefono" name="nombre" placeholder="Teléfono" value="">
 							</div>
 							<div class="field">
-								<select name="">
-  									<option value="volvo">¿Qué servicio necesita? *</option>
-  									<option value="saab">B&aacute;sico</option>
-  									<option value="opel">Cl&aacute;sico</option>
- 									<option value="audi">Premium</option>
+								<select id="servicio" name="">
+  									<option value="choose">¿Qué servicio necesita?</option>
+  									<option value="1">B&aacute;sico</option>
+  									<option value="2">Cl&aacute;sico</option>
+ 									<option value="3">Premium</option>
 								</select>
 							</div>
 							<div class="field">
@@ -223,13 +228,13 @@
 									<span>¿Cuándo?</span>
 								</div>
 								<div class="field-date">
-									<input type="date" id="fecha" name="date">
+									<input type="date" id="fecha" name="date" value="¿Cuándo?">
 								</div>
 							</div>
 						</fieldset>
 						<div></div>
 						<div class="col-xs-6">
-							<button class="submit" type="submit" name="Enviar" value="Enviar">Enviar &#8594;</button>
+							<button class="submit" type="submit" value="Enviar">Enviar &#8594;</button>
 						</div>
 					</form>
 				</div>
