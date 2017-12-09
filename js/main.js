@@ -124,12 +124,9 @@ function reservation() {
 		return false;
 	}
 	
+	document.getElementById("thanks").style.display = "block"; // thanks message
 	return true;
-		h1.style.color = "yellow";
 }
-
-
-
 
 /*$(function()
  { $("#reservation").validate(
