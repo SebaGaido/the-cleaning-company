@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	
 	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js" type="text/javascript"></script>-->
 
@@ -34,7 +35,7 @@
  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<img class="menu-in" src="images/logo.svg" alt="Menu">
     	<a href="#">Inicio</a>
-    	<a href="#">Acerca</a>
+    	<a onClick="about()" href="#">Acerca</a>
     	<a href="#">Servicios</a>
     	<a href="#">Consultar</a>
 		<a href="#">FAQ's</a>
@@ -47,24 +48,47 @@
 		</div>
     </div>
 	
+	<!-- About -->
+	<div id="about-section">
+		<div class="row">
+			<div class="col-md-6">
+				<div>
+					<img class="about" src="images/about.png" alt="¿Quiénes somos?"> 
+				</div>
+			</div>
+			<div class="col-md-6 bg-white">
+				<img class="about-logo" src="images/logo.svg" alt="The Cleaning Company">
+				<div class="text-box">
+					<p class="small text-black right"><br><br></p>
+					<p class="small text-black right">Somos una empresa de limpieza y desinfecci&oacute;n ubicada en Buenos Aires. Trabajamos hace m&aacute;s de 10 a&ntilde;os en establecimientos comerciales y oficinas peque&ntilde;as, medianas y de gran escala.</p>
+					<p class="small text-black right">Empezamos siendo un peque&ntilde;o equipo de trabajo con un objetivo muy marcado: ofrecer un servicio de limpieza profesional adaptado a las necesidades del cliente.</p>
+					<p class="small text-black right">Durante estos a&ntilde;os en el mercado logramos captar la confianza y lealtad de muchos clientes y empresas de diferente escala.</p>
+					<p class="small text-black right">Hoy disponemos de un equipo de m&aacute;s de 20 profesionales dispuesto a garantizar un trabajo de excelencia, tanto en la limpieza como en la atenci&oacute;n al cliente.</p> 
+					<p class="small text-black right">Queremos ser l&iacute;der en el sector de la limpieza, y cada d&iacute;a logramos optimizarnos en cada detalle, desde la atenci&oacute;n, la puntualidad y el cuidado del espacio y sus bienes, hasta la selecci&oacute;n de los mejores productos de limpieza e higiene.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<!-- Header -->
-	<div class="container">
+	<div class="container bg-gradient">
 		<div class="row">
 			<img class="header" src="images/logo.svg" alt="The Cleaning Company">
 		</div>
 		<div>
 			<h2 class="header text-primary center margin">Limpieza e higiene profesional</h2>
-			<h2 class="text-primary center">&#8595;</h2>
+			<button id="toSct1" class="arrow-btn text-primary center">&#8595;</button>
 		</div>
 	</div>
 	
 	<!-- Section -->
-	<div class="container">
+	<div id="sct1" class="container">
 		<div class="row">
 			<div class="col-md-6 bg-blue">
 				<div class="text-box">
 					<h2 class="text-white right">Limpiamos en profundidad</h2><br>
 					<p class="section text-white right">Limpiamos y desinfectamos cada rinc&oacute;n de su espacio, del techo al piso y de pared a pared. Removemos polvo, quitamos suciedades e higienizamos, tanto ambientes como muebles y pertenencias.</p>
+					<button style="text-align: right;" id="toSct2" class="arrow-btn text-primary center text-white">&#8595;</button>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -74,7 +98,7 @@
 	</div>
 	
 	<!-- Section -->
-	<div class="container">
+	<div id="sct2" class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div>
@@ -128,9 +152,9 @@
 		<div class="row">
 			<div class="col-md-6 bg-white">
 				<div class="text-box">
-					<p class="service text-black left">Somos rápidos y eficientes. Valoramos su tiempo, por lo que somos puntuales y ágiles. Disponemos de un equipo de profesionales que saben lo que hacen. No tendrá inconvenientes con los tiempos, ni con malos tratos ni con extravíos o robos.</p>
-					<p class="service text-black left">Nuestra manera de trabajar es simple: nos contacta, nos ponemos de acuerdo en un día y hora para que nuestro equipo vaya, y al finalizar dispondrá de un espacio más limpio, más luminoso y más agradable.</p>
-					<p class="service text-black left">Sabemos que cada cliente tiene necesidades específicas, y por eso nuestro presupuesto es personalizado. Déjenos su datos en nuestro formulario o comuníquese directamente mediante nuestro medios de contacto. Respondemos rápido y aclaramos sus dudas.</p>
+					<p class="small text-black left">Somos rápidos y eficientes. Valoramos su tiempo, por lo que somos puntuales y ágiles. Disponemos de un equipo de profesionales que saben lo que hacen. No tendrá inconvenientes con los tiempos, ni con malos tratos ni con extravíos o robos.</p>
+					<p class="small text-black left">Nuestra manera de trabajar es simple: nos contacta, nos ponemos de acuerdo en un día y hora para que nuestro equipo vaya, y al finalizar dispondrá de un espacio más limpio, más luminoso y más agradable.</p>
+					<p class="small text-black left">Sabemos que cada cliente tiene necesidades específicas, y por eso nuestro presupuesto es personalizado. Déjenos su datos en nuestro formulario o comuníquese directamente mediante nuestro medios de contacto. Respondemos rápido y aclaramos sus dudas.</p>
 				</div>
 			</div>
 			<div class="col-md-6 bg-white">

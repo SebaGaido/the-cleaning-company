@@ -23,8 +23,8 @@ p.review {
 	line-height: 2.2em;
 }
 
-p.service {
-	font-size: 1em;
+p.small {
+	font-size: 0.9em;
 	font-weight: 100;
 	line-height: 1.8em;
 }
@@ -94,9 +94,6 @@ ul li.service {
 	line-height: 1.8em;
 }
 
-img {
-}
-
 img.header {
 	width: 300px;
 	text-align: center;
@@ -125,6 +122,19 @@ img.bottom {
 	opacity: 0.4;
 	margin-left: 40px;
 }
+
+img.about {
+	width: 50%;
+	position: fixed;
+	z-index: -99999;
+}
+
+img.about-logo {
+	width: 140px;
+	margin: 60px 74px 20px 0px;
+	float: right;
+}
+
 svg {
 	overflow: visible;
 }
@@ -212,6 +222,10 @@ svg {
 	background-color: #fff;
 }
 
+.bg-gradient {
+	background-image: linear-gradient(to right top, #ffffff, #f5fcff, #e0fcff, #c3feff, #aaffff);
+}
+
 /* interaction styles
 ------------------------------------------------------- */
 
@@ -271,6 +285,24 @@ button.active {
 button:hover {
 	color: #0066ff;
 	transition: 0.3s;
+}
+
+.arrow-btn {
+	font-size: 1.6em;
+	background-color: transparent;
+	border: none;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.arrow-btn:hover {
+	color: #33ffcc;
+	transition: 0.5s;
+	transform: translate(0px,8px);
+}
+
+.arrow-btn:not(:hover) {
+	transition: 0.5s;
 }
 
 /* review */
@@ -528,6 +560,13 @@ img.menu-in {
 	width: 50%;
 }
 
+/* about-section */
+
+#about-section {
+	height: 700px;
+	display: none;
+}
+
 .field {
 	float: left;
 	width: 50%;
@@ -560,8 +599,6 @@ img.menu-in {
    border-right: none;
    border-bottom: 1px solid #fff;
 }
-
-
 
 .date-txt {
    font-family: 'Lato', sans-serif;

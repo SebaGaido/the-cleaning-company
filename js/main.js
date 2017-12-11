@@ -128,6 +128,35 @@ function reservation() {
 	return true;
 }
 
+/* display about section */
+
+function about() {
+	var about = document.getElementById("about-section");
+	
+	document.getElementById("mySidenav").style.width = "0";
+	about.style.display = "block";
+}
+
+
+/* jQuery smooth scrollTo */
+
+$("#toSct1").click(function() {
+    var sct1 = document.getElementById("sct1");
+    $('html,body').animate({
+        scrollTop: $(sct1).offset().top},
+        1000);
+});
+
+$("#toSct2").click(function() {
+    var sct2 = document.getElementById("sct2");
+    $('html,body').animate({
+        scrollTop: $(sct2).offset().top},
+        1000);
+});
+
+
+
+
 /*$(function()
  { $("#reservation").validate(
       {
