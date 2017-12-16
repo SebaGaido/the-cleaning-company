@@ -135,6 +135,28 @@ function about() {
 	
 	document.getElementById("mySidenav").style.width = "0";
 	about.style.display = "block";
+	
+	/* stop scrolling */
+	
+	$(document).ready(function () {
+    $(window).scroll(function(){
+        var ScrollTop = parseInt($(window).scrollTop());
+        console.log(ScrollTop);
+
+        if (ScrollTop >= 0) {
+			sct1.style.display = "none";
+			sct2.style.display = "none";
+			sct3.style.display = "none";
+			sct4.style.display = "none";
+			rvw.style.display = "none";
+			fqs.style.display = "none";
+			fqsr.style.display = "none";
+			cont.style.display = "none";
+			ctc.style.display = "none";
+            //document.getElementById('back-to-top').fadeOut;
+        }
+    });
+});
 }
 
 
@@ -151,6 +173,20 @@ $("#toSct2").click(function() {
     var sct2 = document.getElementById("sct2");
     $('html,body').animate({
         scrollTop: $(sct2).offset().top},
+        1000);
+});
+
+$("#toSct3").click(function() {
+    var sct3 = document.getElementById("sct3");
+    $('html,body').animate({
+        scrollTop: $(sct3).offset().top},
+        1000);
+});
+
+$("#toSct4").click(function() {
+    var sct4 = document.getElementById("sct4");
+    $('html,body').animate({
+        scrollTop: $(sct4).offset().top},
         1000);
 });
 

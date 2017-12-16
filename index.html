@@ -29,7 +29,10 @@
                 preserveAspectRatio="xMidYMid meet">-->
 	
 	<!-- Menu -->
-	<img class="menu" onclick="openNav()" src="images/menu.svg" alt="Menu">
+	<div>
+		<div class="phone">(+54 11) 4545 6788</div>
+		<img class="menu" onclick="openNav()" src="images/menu.svg" alt="Menu">
+	</div>
 	
 	<div id="mySidenav" class="sidenav">
  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -49,14 +52,14 @@
     </div>
 	
 	<!-- About -->
-	<div id="about-section">
+	<div class="container" id="about-section">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="content-left">
 				<div>
 					<img class="about" src="images/about.png" alt="¿Quiénes somos?"> 
 				</div>
 			</div>
-			<div class="col-md-6 bg-white">
+			<div class="about-desc content-right bg-white">
 				<img class="about-logo" src="images/logo.svg" alt="The Cleaning Company">
 				<div class="text-box">
 					<p class="small text-black right"><br><br></p>
@@ -83,48 +86,31 @@
 	
 	<!-- Section -->
 	<div id="sct1" class="container">
-		<div class="row">
-			<div class="col-md-6 bg-blue">
-				<div class="text-box">
-					<h2 class="text-white right">Limpiamos en profundidad</h2><br>
-					<p class="section text-white right">Limpiamos y desinfectamos cada rinc&oacute;n de su espacio, del techo al piso y de pared a pared. Removemos polvo, quitamos suciedades e higienizamos, tanto ambientes como muebles y pertenencias.</p>
-					<button style="text-align: right;" id="toSct2" class="arrow-btn text-primary center text-white">&#8595;</button>
-				</div>
-			</div>
-			<div class="col-md-6">
+		<div>
+			<div class="content-left">
 					<img class="section" src="images/office-cleaning.png" alt="Un espacio limpio y ordenado aumenta la productividad">
+			</div>
+			<div class="content-right bg-blue">
+				<div class="text-box">
+					<h2 class="text-white left">Limpiamos en profundidad</h2><br>
+					<p class="section text-white left">Limpiamos y desinfectamos cada rinc&oacute;n de su espacio, del techo al piso y de pared a pared. Removemos polvo, quitamos suciedades e higienizamos, tanto ambientes como muebles y pertenencias.</p>
+					<button style="text-align: left; cursor:pointer;" id="toSct2" class="arrow-btn text-primary center text-white">&#8595;</button>
+				</div>
 			</div>
 		</div>
 	</div>
 	
 	<!-- Section -->
 	<div id="sct2" class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div>
-					<img class="section" src="images/eco-friendly.png" alt="Un espacio limpio y ordenado aumenta la productividad"> 
-					<!-- image from https://www.mongabay.com/ -all rights reserved -->
-				</div>
-			</div>
-			<div class="col-md-6 bg-green">
-				<div class="text-box">
-					<h2 class="text-black left">Nuestros productos no da&ntilde;an su salud</h2><br>
-					<p class="section text-black left">A diferencia de muchas otras compa&ntilde;&iacute;as de limpieza, utilizamos productos ecol&oacute;gicos que no da&ntilde;an la salud ni perjudican la productividad. Adem&aacute;s, no dejan malos olores ni intoxican.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Section -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 bg-white">
+		<div>
+			<div class="content-left bg-white">
 				<div class="text-box">
 					<h2 class="text-black right">Cuidamos el espacio y sus bienes</h2><br>
 					<p class="section text-black right">Trabajamos con cuidado y adaptado a su organizaci&oacute;n, sin mover ni da&ntilde;ar nada. Garantizamos un trabajo de excelencia, y nos hacemos cargo ante cualquier percance.</p>
+					<button style="text-align: right; cursor:pointer;" id="toSct3" class="arrow-btn text-primary center text-black">&#8595;</button>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="content-right">
 				<div>
 					<img class="section" src="images/fresh-and-clean.png" alt="Garantizamos el cuidado de su espacio">
 				</div>
@@ -133,7 +119,26 @@
 	</div>
 	
 	<!-- Section -->
-	<div class="container">
+	<div id="sct3" class="container">
+		<div>
+			<div class="content-left">
+				<div>
+					<img class="section" src="images/eco-friendly.png" alt="Un espacio limpio y ordenado aumenta la productividad"> 
+					<!-- image from https://www.mongabay.com/ -all rights reserved -->
+				</div>
+			</div>
+			<div class="content-right bg-green">
+				<div class="text-box">
+					<h2 class="text-black left">Nuestros productos no da&ntilde;an su salud</h2><br>
+					<p class="section text-black left">A diferencia de muchas otras compa&ntilde;&iacute;as de limpieza, utilizamos productos ecol&oacute;gicos que no da&ntilde;an la salud ni perjudican la productividad. Adem&aacute;s, no dejan malos olores ni intoxican.</p>
+					<button style="text-align: left; cursor:pointer;" id="toSct4" class="arrow-btn text-primary center text-black">&#8595;</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Section -->
+	<!--<div class="container">
 		<div class="row">
 			<div class="col-md-6 bg-black">
 				<div class="text-box">
@@ -145,45 +150,106 @@
 					<img class="section" src="images/productivity.png" alt="Limpieza profunda">
 			</div>
 		</div>
-	</div>
+	</div>-->
 	
 	<!-- Section -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 bg-white">
-				<div class="text-box">
-					<p class="small text-black left">Somos rápidos y eficientes. Valoramos su tiempo, por lo que somos puntuales y ágiles. Disponemos de un equipo de profesionales que saben lo que hacen. No tendrá inconvenientes con los tiempos, ni con malos tratos ni con extravíos o robos.</p>
+	<!--<div class="container">
+		<div class="bg-white">
+			<div class="content-left">
+				<div class="text-box-desc">
+					<h1><span class="text-black">Somos r&aacute;pidos.</span> <span class="text-light-blue">Somos eficientes.</span></h1><br><br>
+					<p class="small text-black left">Valoramos su tiempo, por lo que somos puntuales y ágiles. Disponemos de un equipo de profesionales que saben lo que hacen. No tendrá inconvenientes con los tiempos, ni con malos tratos ni con extravíos o robos.</p>
 					<p class="small text-black left">Nuestra manera de trabajar es simple: nos contacta, nos ponemos de acuerdo en un día y hora para que nuestro equipo vaya, y al finalizar dispondrá de un espacio más limpio, más luminoso y más agradable.</p>
 					<p class="small text-black left">Sabemos que cada cliente tiene necesidades específicas, y por eso nuestro presupuesto es personalizado. Déjenos su datos en nuestro formulario o comuníquese directamente mediante nuestro medios de contacto. Respondemos rápido y aclaramos sus dudas.</p>
 				</div>
 			</div>
-			<div class="col-md-6 bg-white">
-				<div class="text-box">
+			<div class="content-right">
+				<div class="text-box-items">
 					<ul>
-						<li class="service left">Lavado de alfombras</li>
-						<li class="service left">Lavado de sillas y sillones</li>
-						<li class="service left">Lavado de cortinas</li>
-						<li class="service left">Lavado de vidrios</li>
-						<li class="service left">Limpieza de paredes enteladas</li>
-						<li class="service left">Absorci&oacute;n de agua por inundaciones</li>
-						<li class="service left">Restauraci&oacute;n y compostura de alfombras</li>
-						<li class="service left">Limpieza de conductos y equipos A/C</li>
-						<li class="service left">Limpieza de frente de edificios</li>
-						<li class="service left">Limpieza integral de oficinas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de alfombras</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de sillas y sillones</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de cortinas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de vidrios</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de paredes enteladas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Absorci&oacute;n de agua por inundaciones</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Restauraci&oacute;n y compostura de alfombras</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de conductos y equipos A/C</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de frente de edificios</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza integral de oficinas</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+	<div class="container">
+		<div>
+			<div class="section-left">
+				<div class="text-box-desc">
+					<h1><span class="text-black">Somos r&aacute;pidos.</span> <span class="text-light-blue">Somos eficientes.</span></h1><br><br>
+					<p class="small text-black left">Valoramos su tiempo, por lo que somos puntuales y ágiles. Disponemos de un equipo de profesionales que saben lo que hacen. No tendrá inconvenientes con los tiempos, ni con malos tratos ni con extravíos o robos.</p>
+					<p class="small text-black left">Nuestra manera de trabajar es simple: nos contacta, nos ponemos de acuerdo en un día y hora para que nuestro equipo vaya, y al finalizar dispondrá de un espacio más limpio, más luminoso y más agradable.</p>
+					<p class="small text-black left">Sabemos que cada cliente tiene necesidades específicas, y por eso nuestro presupuesto es personalizado. Déjenos su datos en nuestro formulario o comuníquese directamente mediante nuestro medios de contacto. Respondemos rápido y aclaramos sus dudas.</p>
+				</div>
+			</div>
+			<div class="section-right">
+				<div class="text-box-desc">
+					<h2>Nuestros servicios</h2><br>
+					<ul>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de alfombras</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de sillas y sillones</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de cortinas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de vidrios</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de paredes enteladas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Absorci&oacute;n de agua por inundaciones</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Restauraci&oacute;n y compostura de alfombras</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de conductos y equipos A/C</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de frente de edificios</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza integral de oficinas</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	
+	<!-- Section -->
+	<!--<div id="sct4" class="container">
+		<div class="bg-white">
+			<div class="content-left bg-white">
+				<div class="text-box-desc">
+					<h1><span class="text-black">Somos r&aacute;pidos.</span> <span class="text-light-blue">Somos eficientes.</span></h1><br><br>
+					<p class="small text-black left">Valoramos su tiempo, por lo que somos puntuales y ágiles. Disponemos de un equipo de profesionales que saben lo que hacen. No tendrá inconvenientes con los tiempos, ni con malos tratos ni con extravíos o robos.</p>
+					<p class="small text-black left">Nuestra manera de trabajar es simple: nos contacta, nos ponemos de acuerdo en un día y hora para que nuestro equipo vaya, y al finalizar dispondrá de un espacio más limpio, más luminoso y más agradable.</p>
+					<p class="small text-black left">Sabemos que cada cliente tiene necesidades específicas, y por eso nuestro presupuesto es personalizado. Déjenos su datos en nuestro formulario o comuníquese directamente mediante nuestro medios de contacto. Respondemos rápido y aclaramos sus dudas.</p>
+				</div>
+			</div>
+			<div class="content-right">
+				<div class="text-box">
+					<ul>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de alfombras</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de sillas y sillones</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de cortinas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Lavado de vidrios</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de paredes enteladas</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Absorci&oacute;n de agua por inundaciones</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Restauraci&oacute;n y compostura de alfombras</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de conductos y equipos A/C</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza de frente de edificios</li>
+						<li class="service left"><img src="images/tick.svg" class="item" alt="* ">&nbsp;&nbsp;&nbsp;&nbsp;Limpieza integral de oficinas</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
 	<!-- reviews-->
-	<div class="container">
+	<div id="rvw" class="container2">
 		<div class="row bg-green">
-			<div class="col-md-3">
+			<div class="left-small-1">
 				<div class="left">
 				</div>
 			</div>
-			<div class="col-md-8">
+			<div class="content-big">
 					<div class="center rvw">
 						<p class="review text-black">"consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit."</p>
 						<p class="text-white customer">-Cliente</p>
@@ -198,7 +264,7 @@
 					<button class="rvw-right" onclick="plusDivs(1)">&#10095;</button>
 					<button class="rvw-left" onclick="plusDivs(-1)">&#10094;</button>
 			</div>
-			<div class="col-md-3">
+			<div class="right-small-3">
 				<div class="right">
 				</div>
 			</div>
@@ -206,13 +272,13 @@
 	</div>
 	
 	<!-- FAQs -->
-	<div class="container faqs-big-size">
+	<div id="fqs" class="container faqs-big-size">
 		<div class="center less-line-height">
 					<br><br><br><br>
 					<h3 class="faqs text-black">Pregunte lo que necesite saber. Estamos para responderle.</h3>
-				</div>
+		</div>
 		<div class="row">
-			<div class="col-md-4 col-sm-4 faqs-box">
+			<div class="left-small faqs-box">
 				<button class="faqstab" id="defaultOpen" onClick="openfaq(event,'faq1')">¿C&oacute;mo trabaja The Cleaning Company?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq2')">¿En qu&eacute; tipos de establecimientos trabajan?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq3')">¿Debe haber alguien presente?</button>
@@ -221,7 +287,7 @@
 				<button class="faqstab" onclick="openfaq(event,'faq6')">¿C&oacute;mo es la forma de pago?</button>
 				<button class="faqstab" onclick="openfaq(event,'faq7')">Me interesa ¿C&oacute;mo reservo?</button>
 			</div>
-			<div class="col-md-4 faqs-box">
+			<div class="right-small faqs-box">
 				<div id="faq1" class="tabcontent"><p>consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p></div>
 				<div id="faq2" class="tabcontent"><p>Hay controversia sobre su fiabilidad y precisión.19 La revista científica Nature declaró en diciembre de 2005 que la Wikipedia en inglés era casi tan exacta en artículos científicos como la Encyclopaedia Britannica.20 El estudio se realizó comparando 42 artículos de a</p></div>
 				<div id="faq3" class="tabcontent"><p>grupo de alumnos del máster de Periodismo del Instituto de Estudios Políticos de París para analizar la fiabilidad del proyecto, se materializó en el libro La revolución Wikipedia (Alianza Editorial) cuyas conclusiones eran bastante críti</p></div>
@@ -234,13 +300,13 @@
 	</div>
 	
 	<!-- FAQs responsive -->
-	<div class="container faqs-small-size">
+	<div id="fqsr" class="container faqs-small-size">
 		<div class="center less-line-height">
 					<br><br><br><br>
 					<h3 class="faqs text-black">Pregunte lo que necesite saber. Estamos para responderle.</h3>
 				</div>
 		<div class="row">
-			<div class="col-md-4 col-sm-4 faqs-box">
+			<div class="right-small faqs-box">
 				<button class="accordion faqstab">¿C&oacute;mo trabaja The Cleaning Company?</button>
 				<div class="panel"><p>consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p></div>
 				<button class="accordion faqstab">¿En qu&eacute; tipos de establecimientos trabajan?</button>
@@ -262,9 +328,9 @@
 	<!-- form -->
 	<div class="container" id="cont">
 		<div class="row bg-light-blue">
-			<div class="col-md-3">
+			<div class="left-small-1">
 			</div>
-			<div class="col-md-8 col-sm-8">
+			<div class="content-big">
 				<div class="center less-line-height">
 					<h1 class="form text-white">¿Listo para un espacio m&aacute;s limpio?</h1>
 					<h3 class="form text-white">D&eacute;jenos sus datos y lo contactaremos</h3>
@@ -277,15 +343,18 @@
 								<input id="nombre" type="text" name="nombre" placeholder="Nombre *">
 							</div>
 							<div class="field">
-								<input id="email" type="text" name="email" placeholder="Email *">
+								<input id="apellido" type="text" name="apellido" placeholder="Apellido *">
 							</div>
 							<div class="field">
-								<input id="ciudad" type="text" name="ciudad" placeholder="Ciudad *">
+								<input id="email" type="text" name="email" placeholder="Email *">
 							</div>
 							<div class="field">
 								<input id="telefono" name="telefono" placeholder="Teléfono">
 							</div>
-							<div class="field">
+							<div>
+								<textarea rows="3" cols="5" placeholder="¿En qué lo podemos ayudar?"></textarea>
+							</div>
+							<!--<div class="field">
 								<select id="servicio" name="servicio">
   									<option value="choose">¿Qué servicio necesita?</option>
   									<option value="Básico">B&aacute;sico</option>
@@ -300,29 +369,88 @@
 								<div class="field-date">
 									<input type="date" id="fecha" name="fecha">
 								</div>
-							</div>
+							</div>-->
 						</fieldset>
-						<div></div>
-						<div class="col-xs-6">
+						<div><br></div>
+						<div class="full-size">
 							<button class="submit" type="submit" value="Enviar">Enviar &#8594;</button>	
 						</div>
 					</form>
 					<div id="thanks">hello</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="right-small-3">
 			</div>
 		</div>
 	</div>
 	
-	<!-- contacto -->
-	<div class="container">
-		<div class="row bg-black">
-			<div class="col-md-6 col-sm-6">
+	
+	
+	<!-- contacto backup-->
+	<div id="ctc" class="container bg-black">
+		<div class="row">
+			<div class="content-left">
 				<img class="contact" src="images/logo-bw.svg" alt="The Cleaning Company">
 			</div>
-			<div class="col-md-6 col-sm-6">
-				<div class="col-sm-3 text-white">
+			<div class="middle-right text-box text-white">
+				<ul>
+					<li style="font-weight: bold;">Contacto</li>
+					<li><br></li>
+					<li>Direcci&oacute;n 1234</li>
+					<li><br></li>
+					<li style="font-weight: bold;">informaci&oacute;n general</li>
+					<li>info@thecleaningcompany.com</li>
+					<li>2244-3366</li>
+					<li><br></li>
+					<li style="font-weight: bold;">Atenci&oacute;n al cliente</li>
+					<li>clientes@thecleaningcompany.com</li>
+					<li>2244-3366</li>
+				</ul>
+			</div>
+			<div class="right-small text-box text-white">
+				<ul>
+					<li style="font-weight: bold;">Contacto</li>
+					<li><br></li>
+					<li>Direcci&oacute;n 1234</li>
+					<li><br></li>
+					<li style="font-weight: bold;">informaci&oacute;n general</li>
+					<li>info@thecleaningcompany.com</li>
+					<li>2244-3366</li>
+					<li><br></li>
+					<li style="font-weight: bold;">Atenci&oacute;n al cliente</li>
+					<li>clientes@thecleaningcompany.com</li>
+					<li>2244-3366</li>
+				</ul>
+			</div>
+			
+			<!--<div class="right-small-1 text-box text-white">
+			</div>
+			<div class="text-box text-white">
+				<ul>
+					<li style="font-weight: bold;">Contacto</li>
+					<li><br></li>
+					<li>Direcci&oacute;n 1234</li>
+					<li><br></li>
+					<li style="font-weight: bold;">informaci&oacute;n general</li>
+					<li>info@thecleaningcompany.com</li>
+					<li>2244-3366</li>
+					<li><br></li>
+					<li style="font-weight: bold;">Atenci&oacute;n al cliente</li>
+					<li>clientes@thecleaningcompany.com</li>
+					<li>2244-3366</li>
+				</ul>
+			</div>
+			<div class="right-small-3 text-box text-white">
+				<ul>
+					<li style="font-weight: bold;">Contacto</li>
+					<li><br></li>
+					<li>Direcci&oacute;n</li>
+					<li>Mail</li>
+					<li>2244-3366</li>
+					<li>Mapa</li>
+				</ul>
+			</div>-->
+			<!--<div class="middle-left text-white">
 					<ul>
 						<li style="font-weight: bold;">Contacto</li>
 						<li><br></li>
@@ -331,11 +459,8 @@
 						<li>2244-3366</li>
 						<li>Mapa</li>
 					</ul>
-					<!--<img class="bottom" src="images/contact-img.png" alt="The Cleaning Company">-->
-				</div>
-				<div class="col-sm-3 text-white">
-				</div>
-				<div class="col-sm-3 text-white">
+			</div>
+			<div class="middle-right text-white">
 					<ul>
 						<li style="font-weight: bold;">Servicios</li>
 						<li><br></li>
@@ -344,19 +469,20 @@
 						<li>Organizaci&oacute;n</li>
 						<li>Otros</li>
 					</ul>
+			</div>
+			<div class="right-small text-white">
 					<ul>
-						<li><br></li>
+						<li style="font-weight: bold;">Men&uacute;</li>
 						<li>Inicio</li>
 						<li>Servicios</li>
 						<li>Acerca</li>
 						<li>FAQ's</li>
 						<li>Contacto</li>
 					</ul>
-				</div>
-			</div>
+			</div>-->
+					<!--<img class="bottom" src="images/contact-img.png" alt="The Cleaning Company">-->
 		</div>
 	</div>
-	
 </body>
 	<script src="js/main.js"></script>
 </html>
