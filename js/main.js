@@ -128,6 +128,12 @@ function reservation() {
 	return true;
 }
 
+/* close menu when click items */
+
+function closeItem () {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
 /* display about section */
 
 function about() {
@@ -152,7 +158,7 @@ function about() {
 			fqs.style.display = "none";
 			fqsr.style.display = "none";
 			cont.style.display = "none";
-			ctc.style.display = "none";
+			cntc.style.display = "none";
             //document.getElementById('back-to-top').fadeOut;
         }
     });

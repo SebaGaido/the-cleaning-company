@@ -37,12 +37,12 @@
 	<div id="mySidenav" class="sidenav">
  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<img class="menu-in" src="images/logo.svg" alt="Menu">
-    	<a href="#">Inicio</a>
+    	<a onClick="closeItem()" href="#sct0">Inicio</a>
     	<a onClick="about()" href="#">Acerca</a>
-    	<a href="#">Servicios</a>
-    	<a href="#">Consultar</a>
-		<a href="#">FAQ's</a>
-		<a href="#">Contacto</a>
+    	<a onClick="closeItem()" href="#sct4">Servicios</a>
+    	<a onClick="closeItem()" href="#cont">Consultar</a>
+		<a onClick="closeItem()" href="#fq-sct">FAQ's</a>
+		<a onClick="closeItem()" href="#cntc">Contacto</a>
 		<div class="menu-txt">
 			<span style="font-weight: bold;">The Cleaning Company</span><br>
 			<span>info@thecleaningcompany.com</span><br>
@@ -68,15 +68,16 @@
 					<p class="small text-black right">Durante estos a&ntilde;os en el mercado logramos captar la confianza y lealtad de muchos clientes y empresas de diferente escala.</p>
 					<p class="small text-black right">Hoy disponemos de un equipo de m&aacute;s de 20 profesionales dispuesto a garantizar un trabajo de excelencia, tanto en la limpieza como en la atenci&oacute;n al cliente.</p> 
 					<p class="small text-black right">Queremos ser l&iacute;der en el sector de la limpieza, y cada d&iacute;a logramos optimizarnos en cada detalle, desde la atenci&oacute;n, la puntualidad y el cuidado del espacio y sus bienes, hasta la selecci&oacute;n de los mejores productos de limpieza e higiene.</p>
+					<button class="back" onClick="location.href='index.html'">&#8592; Volver</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	<!-- Header -->
-	<div class="container bg-gradient">
+	<div id="sct0" class="container bg-gradient">
 		<div class="row">
-			<img class="header" src="images/logo.svg" alt="The Cleaning Company">
+				<img class="header" src="images/logo-home.png" alt="The Cleaning Company">
 		</div>
 		<div>
 			<h2 class="header text-primary center margin">Limpieza e higiene profesional</h2>
@@ -182,7 +183,7 @@
 		</div>
 	</div>-->
 	
-	<div class="container">
+	<div id="sct4" class="container">
 		<div>
 			<div class="section-left">
 				<div class="text-box-desc">
@@ -272,6 +273,7 @@
 	</div>
 	
 	<!-- FAQs -->
+	<div id="fq-sct">
 	<div id="fqs" class="container faqs-big-size">
 		<div class="center less-line-height">
 					<br><br><br><br>
@@ -279,15 +281,15 @@
 		</div>
 		<div class="row">
 			<div class="left-small faqs-box">
-				<button class="faqstab" id="defaultOpen" onClick="openfaq(event,'faq1')">¿C&oacute;mo trabaja The Cleaning Company?</button>
-				<button class="faqstab" onclick="openfaq(event,'faq2')">¿En qu&eacute; tipos de establecimientos trabajan?</button>
-				<button class="faqstab" onclick="openfaq(event,'faq3')">¿Debe haber alguien presente?</button>
-				<button class="faqstab" onclick="openfaq(event,'faq4')">¿Debo proveer los insumos de limpieza?</button>
-				<button class="faqstab" onclick="openfaq(event,'faq5')">¿Qu&eacute; seguridad y garant&iacute;a tengo?</button>
-				<button class="faqstab" onclick="openfaq(event,'faq6')">¿C&oacute;mo es la forma de pago?</button>
-				<button class="faqstab" onclick="openfaq(event,'faq7')">Me interesa ¿C&oacute;mo reservo?</button>
+				<button class="faqstab pointer" id="defaultOpen" onClick="openfaq(event,'faq1')">¿C&oacute;mo trabaja The Cleaning Company?</button>
+				<button class="faqstab pointer" onclick="openfaq(event,'faq2')">¿En qu&eacute; tipos de establecimientos trabajan?</button>
+				<button class="faqstab pointer" onclick="openfaq(event,'faq3')">¿Debe haber alguien presente?</button>
+				<button class="faqstab pointer" onclick="openfaq(event,'faq4')">¿Debo proveer los insumos de limpieza?</button>
+				<button class="faqstab pointer" onclick="openfaq(event,'faq5')">¿Qu&eacute; seguridad y garant&iacute;a tengo?</button>
+				<button class="faqstab pointer" onclick="openfaq(event,'faq6')">¿C&oacute;mo es la forma de pago?</button>
+				<button class="faqstab pointer" onclick="openfaq(event,'faq7')">Me interesa ¿C&oacute;mo reservo?</button>
 			</div>
-			<div class="right-small faqs-box">
+			<div class="content-right faqs-box">
 				<div id="faq1" class="tabcontent"><p>consectetur adipiscing elit Vivamus. lacus justo,  molestie in hendrerit. molestie scelerisque a lacus. consectetur adipiscing elit Vivamus. lacus justo,  molestie scelerisque a lacus in hendrerit. molestie scelerisque a lacus.</p></div>
 				<div id="faq2" class="tabcontent"><p>Hay controversia sobre su fiabilidad y precisión.19 La revista científica Nature declaró en diciembre de 2005 que la Wikipedia en inglés era casi tan exacta en artículos científicos como la Encyclopaedia Britannica.20 El estudio se realizó comparando 42 artículos de a</p></div>
 				<div id="faq3" class="tabcontent"><p>grupo de alumnos del máster de Periodismo del Instituto de Estudios Políticos de París para analizar la fiabilidad del proyecto, se materializó en el libro La revolución Wikipedia (Alianza Editorial) cuyas conclusiones eran bastante críti</p></div>
@@ -324,6 +326,7 @@
 			</div>
 		</div>
 	</div>	
+	</div>
 	
 	<!-- form -->
 	<div class="container" id="cont">
@@ -384,105 +387,71 @@
 		</div>
 	</div>
 	
-	
-	
-	<!-- contacto backup-->
-	<div id="ctc" class="container bg-black">
-		<div class="row">
-			<div class="content-left">
-				<img class="contact" src="images/logo-bw.svg" alt="The Cleaning Company">
+	<!-- contacto -->
+	<div id="cntc" class="container">
+		<div>
+			<div class="content-left bg-black">
+				<div>
+					<img class="contact" src="images/logo-bw.svg" alt="The Cleaning Company">
+					<!-- image from https://www.mongabay.com/ -all rights reserved -->
+				</div>
 			</div>
-			<div class="middle-right text-box text-white">
-				<ul>
-					<li style="font-weight: bold;">Contacto</li>
-					<li><br></li>
-					<li>Direcci&oacute;n 1234</li>
-					<li><br></li>
-					<li style="font-weight: bold;">informaci&oacute;n general</li>
-					<li>info@thecleaningcompany.com</li>
-					<li>2244-3366</li>
-					<li><br></li>
-					<li style="font-weight: bold;">Atenci&oacute;n al cliente</li>
-					<li>clientes@thecleaningcompany.com</li>
-					<li>2244-3366</li>
-				</ul>
-			</div>
-			<div class="right-small text-box text-white">
-				<ul>
-					<li style="font-weight: bold;">Contacto</li>
-					<li><br></li>
-					<li>Direcci&oacute;n 1234</li>
-					<li><br></li>
-					<li style="font-weight: bold;">informaci&oacute;n general</li>
-					<li>info@thecleaningcompany.com</li>
-					<li>2244-3366</li>
-					<li><br></li>
-					<li style="font-weight: bold;">Atenci&oacute;n al cliente</li>
-					<li>clientes@thecleaningcompany.com</li>
-					<li>2244-3366</li>
-				</ul>
-			</div>
-			
-			<!--<div class="right-small-1 text-box text-white">
-			</div>
-			<div class="text-box text-white">
-				<ul>
-					<li style="font-weight: bold;">Contacto</li>
-					<li><br></li>
-					<li>Direcci&oacute;n 1234</li>
-					<li><br></li>
-					<li style="font-weight: bold;">informaci&oacute;n general</li>
-					<li>info@thecleaningcompany.com</li>
-					<li>2244-3366</li>
-					<li><br></li>
-					<li style="font-weight: bold;">Atenci&oacute;n al cliente</li>
-					<li>clientes@thecleaningcompany.com</li>
-					<li>2244-3366</li>
-				</ul>
-			</div>
-			<div class="right-small-3 text-box text-white">
-				<ul>
-					<li style="font-weight: bold;">Contacto</li>
-					<li><br></li>
-					<li>Direcci&oacute;n</li>
-					<li>Mail</li>
-					<li>2244-3366</li>
-					<li>Mapa</li>
-				</ul>
-			</div>-->
-			<!--<div class="middle-left text-white">
-					<ul>
-						<li style="font-weight: bold;">Contacto</li>
-						<li><br></li>
-						<li>Direcci&oacute;n</li>
-						<li>Mail</li>
+			<div class="content-right bg-black contact">
+				<div class="contact-box text-white">
+					<h2 class="right">Informaci&oacute;n general</h2><br>
+					<ul class="right">
+						<li>info@thecleaningcompany.com</li>
 						<li>2244-3366</li>
-						<li>Mapa</li>
+						<li>TheCleaningCompany.com.ar</li>
+						<li>Buenos Aires, Argentina</li>
 					</ul>
+					<br>
+					<h2 class="right">Clientes</h2><br>
+					<ul class="right">
+						<li>clientes@thecleaningcompany.com</li>
+						<li>2244-3366</li>
+						<li>TheCleaningCompany.com.ar</li>
+						<li>Buenos Aires, Argentina</li>
+					</ul>
+					<br>
+					<p class="text-white right" style="font-size: 0.8em">The Cleaning Company SRL &#174;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="text-white" href="http://sebastiangaido.com" target="_blank">SG.</a></p>
+				</div>
 			</div>
-			<div class="middle-right text-white">
-					<ul>
-						<li style="font-weight: bold;">Servicios</li>
-						<li><br></li>
-						<li>Limpieza</li>
-						<li>Mudanza</li>
-						<li>Organizaci&oacute;n</li>
-						<li>Otros</li>
-					</ul>
-			</div>
-			<div class="right-small text-white">
-					<ul>
-						<li style="font-weight: bold;">Men&uacute;</li>
-						<li>Inicio</li>
-						<li>Servicios</li>
-						<li>Acerca</li>
-						<li>FAQ's</li>
-						<li>Contacto</li>
-					</ul>
-			</div>-->
-					<!--<img class="bottom" src="images/contact-img.png" alt="The Cleaning Company">-->
 		</div>
 	</div>
+	
+	<!--<div class="container">
+		<div class="row">
+			<div class="left-small contact-box bg-black">
+					<img class="contact" src="images/logo-bw.svg" alt="The Cleaning Company">
+			</div>
+			<div class="middle-left contact-box bg-black text-white">
+				<ul>
+					<li>Contacto</li>
+					<li>Contacto</li>
+					<li>Contacto</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+			<div class="middle-right contact-box bg-black text-white">
+				<ul>
+					<li>Contacto</li>
+					<li>Contacto</li>
+					<li>Contacto</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+			<div class="right-small contact-box bg-black text-white">
+				<ul>
+					<li>Contacto</li>
+					<li>Contacto</li>
+					<li>Contacto</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+		</div>
+	</div>-->
 </body>
+	
 	<script src="js/main.js"></script>
 </html>
