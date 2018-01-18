@@ -340,7 +340,39 @@
 				</div>
 				<div><br><br></div>
 				<div class="center">
-					<form onsubmit="return reservation();" id="reservation" action="php/contact.php" method="post" accept-charset="UTF-8">
+					<form id="contact-form" class="form" name="sentMessage" novalidate>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="Su nombre y apellido" id="name" required data-validation-required-message="Por favor ingrese su nombre y apellido.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="email" autocomplete="off" class="form-control" placeholder="Su email" id="email" required data-validation-required-message="Por favor ingrese su email.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="Su telefono" id="phone" required data-validation-required-message="Por favor ingrese su telefono.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Message Text area -->
+                        <div class="form-group"> <!-- Your email input -->
+                            <textarea class="form-control" rows="7" placeholder="Su consulta" id="message" required data-validation-required-message="Por favor ingrese su consulta."></textarea>
+                            <p class="help-block text-danger"></p>
+                            <div id="success"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary tf-btn color">Enviar</button>
+                        <br><br>
+                    </form>
+					
+					<!-- FORM -->
+					<!--<form onsubmit="return reservation();" id="reservation" method="post" accept-charset="UTF-8">
 						<fieldset>
 							<div class="field">
 								<input id="nombre" type="text" name="nombre" placeholder="Nombre *">
@@ -357,29 +389,12 @@
 							<div>
 								<textarea rows="3" cols="5" placeholder="¿En qué lo podemos ayudar?"></textarea>
 							</div>
-							<!--<div class="field">
-								<select id="servicio" name="servicio">
-  									<option value="choose">¿Qué servicio necesita?</option>
-  									<option value="Básico">B&aacute;sico</option>
-  									<option value="Clásico">Cl&aacute;sico</option>
- 									<option value="Premium">Premium</option>
-								</select>
-							</div>
-							<div class="field">
-								<div class="field-date date-txt">
-									<span>¿Cuándo?</span>
-								</div>
-								<div class="field-date">
-									<input type="date" id="fecha" name="fecha">
-								</div>
-							</div>-->
 						</fieldset>
 						<div><br></div>
 						<div class="full-size">
 							<button class="submit" type="submit" value="Enviar">Enviar &#8594;</button>	
 						</div>
-					</form>
-					<div id="thanks">hello</div>
+					</form>-->
 				</div>
 			</div>
 			<div class="right-small-3">
@@ -454,4 +469,13 @@
 </body>
 	
 	<script src="js/main.js"></script>
+	
+	<!-- form -->
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	
+	
 </html>

@@ -73,9 +73,6 @@ for (j = 0; j < acc.length; j++) {
 }
 
 
-
-
-
 // form validation
 
 function reservation() {

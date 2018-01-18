@@ -368,10 +368,13 @@ fieldset {
   padding-left: 12px;
 }
 
-#thanks {
-	display: none;
+p.help-block.text-danger ul li {
+    display: block;
+    margin-left: -20px;
+    color: #FFEB00;
+	font-size: 14px;
+	text-align: center;
 }
-
 
 button {
 	text-decoration: none;
@@ -1146,6 +1149,7 @@ img.menu-in {
 	}
 	fieldset {
 		margin-top: -20px;
+		width: 100%;
 	}
 	input {
 		font-size: 0.6em;
@@ -1254,7 +1258,6 @@ img.menu-in {
 	.arrow-btn {
 		display: block;
 	}
-
 	.text-box {
 		padding: 60px 60px 60px 60px;
 	}
@@ -1413,7 +1416,6 @@ img.menu-in {
 	position: relative;
 	display: inline-block;
 }
-
 	.right-small-3 {
 		width: 16.6%;
 	}
