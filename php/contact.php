@@ -1,10 +1,8 @@
 <?php
-$nombre = $_POST["nombre"];
+$name = $_POST["nombre"];
 $email = $_POST["email"];
-$ciudad = $_POST["ciudad"];
-$telefono = $_POST["telefono"];
-$servicio = $_POST["servicio"];
-$fecha = $_POST["fecha"];
+$phone = $_POST["telefono"];
+$message = $_POST["consulta"];
 
 // YOU ONLY NEED TO MODIFY THIS TWO VARIABLES
 // WITH YOUR MAIL ACCOUNT AND CUSTOMIZE YOUR
@@ -15,29 +13,20 @@ $Subject = "Consulta desde TheCleaningCompany.com";
 
 // prepare email body text
 $Body .= "Nombre: ";
-$Body .= $nombre;
+$Body .= $name;
 $Body .= "\n";
  
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
 
-$Body .= "Ciudad: ";
-$Body .= $ciudad;
-$Body .= "\n";
-
 $Body .= "Telefono: ";
-$Body .= $telefono;
+$Body .= $phone;
 $Body .= "\n";
 
-$Body .= "Servicio: ";
-$Body .= $servicio;
+$Body .= "Consulta: ";
+$Body .= $message;
 $Body .= "\n";
-
-$Body .= "Fecha: ";
-$Body .= $fecha;
-$Body .= "\n";
-
  
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
