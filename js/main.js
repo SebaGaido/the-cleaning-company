@@ -9,6 +9,13 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+
+// Scroll difuminado teléfono 
+$(window).scroll(function(){
+    $(".phone").css("opacity", 1 - $(window).scrollTop() / 250);
+});
+
+
 // Faqs section: vertical tabs
 
 function openfaq (evt, faqItem) {
