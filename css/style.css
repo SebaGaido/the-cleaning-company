@@ -26,7 +26,7 @@ p {
 
 p.section {
 	font-size: 1.4vw;
-	line-height: 2.2em;
+	line-height: 1.8em;
 }
 
 p.review {
@@ -188,8 +188,12 @@ svg {
 	padding: 200px 80px 200px 80px;
 }
 
+.text-box-about {
+	padding: 200px 80px 200px 80px;
+	background-color: #fff;
+}
 .text-box-desc {
-	padding: 100px 80px 100px 80px;
+	padding: 120px 40px 80px 80px;
 }
 
 .text-box-items {
@@ -984,6 +988,11 @@ img.menu-in {
 	img.contact {
     	display: none;
 	}
+	img.about-logo {
+    	width: 120px;
+    	margin: 60px 36px 20px 0px;
+    	float: right;
+	}
 	.less-line-height {
     	line-height: 0.1em;
 	}
@@ -1010,8 +1019,14 @@ img.menu-in {
 	.text-box {
     	padding: 50px 40px 80px 40px;
 	}
+	.text-box-about {
+		padding: 200px 40px 160px 160px;
+		margin-left: -240px;
+		font-size: 0.8em;
+	}
 	.text-box-desc {
-		padding: 80px 40px 40px 40px;
+		padding: 80px 40px 80px 40px;
+   		 font-size: 0.8em;
 	}
 	.contact-box {
 		padding: 20px;
@@ -1166,10 +1181,11 @@ img.menu-in {
 	}
 	input {
 		font-size: 0.6em;
+		margin-left: -14px;
 	}
 	textarea {
 		width: 75%;
-		margin-left: 20px;
+		margin-left: 10px;
 		font-size: 0.6em;
 		
 	}
@@ -1277,7 +1293,7 @@ img.menu-in {
 		display: none;
 	}
 	img.section {
-		max-width: 100%;
+		min-width: 660px;
 		min-height: 100%;
 		z-index: -999;
 	}
@@ -1293,7 +1309,12 @@ img.menu-in {
 		padding: 60px 60px 60px 60px;
 	}
 	.text-box-desc {
-		padding: 60px;
+		padding: 80px 80px 20px 60px;
+	}
+	.text-box-about {
+		padding: 200px 40px 80px 80px;
+		font-size: 1em;
+		height: 678px;
 	}
 	.text-box-items {
 		padding: 20px;
@@ -1523,7 +1544,12 @@ img.menu-in {
 		margin-bottom: -40px;
 	}
 	img.about {
-		display: none;
+		height: 100%;
+		min-width: 660px;
+	}
+	img.section {
+		height: 100%;
+		min-width: 660px;
 	}
 }
 
@@ -1533,5 +1559,13 @@ img.menu-in {
     float: left;
 	width: 30%;
   }
+	img.about {
+		height: 100%;
+		min-width: 660px;
+	}
+	img.section {
+		height: 100%;
+		min-width: 660px;
+	}
 }
 
